@@ -20,7 +20,7 @@ class PatientController extends Controller
 
         $this->patientResolver->savePatient($firstName, $lastName, $birthdate);
 
-        return response()->json(['message' => $birthdate->format("Y-m-d")]);
+        return response()->json(['message' => 'ok']);
     }
 
     public function list(Request $request): JsonResponse
